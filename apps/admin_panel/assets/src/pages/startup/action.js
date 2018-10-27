@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie';
-import { getCurrentUser, getCurrentAccount } from '../../tokenplay/services/self_api';
-import { get } from '../../tokenplay/services/account_api';
+import { getCurrentUser, getCurrentAccount } from '../../turboplay/services/self_api';
+import { get } from '../../turboplay/services/account_api';
 import SessionActions from '../../actions/session.actions';
 import sessionConstants from '../../constants/session.constants';
 import { accountErrors } from '../../constants/error.constants';

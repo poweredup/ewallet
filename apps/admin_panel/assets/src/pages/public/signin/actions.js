@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie';
 import { push } from 'react-router-redux';
 
-import { login } from '../../../tokenplay/services/session_api';
+import { login } from '../../../turboplay/services/session_api';
 import SessionActions from '../../../actions/session.actions';
 import sessionConstants from '../../../constants/session.constants';
 import call from '../../../actions/api.actions';

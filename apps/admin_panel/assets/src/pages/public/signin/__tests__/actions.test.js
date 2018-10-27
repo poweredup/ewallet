@@ -9,7 +9,7 @@ import { validResponse, errorResponse, validParams } from './stubs';
 const mockStore = configureMockStore([thunk]);
 
 // Require for test specific function mock override
-const sessionAPI = require('../../../../tokenplay/services/session_api');
+const sessionAPI = require('../../../../turboplay/services/session_api');
 // Require for global function mock override
 const ErrorHandler = require.requireMock('../../../../helpers/errorHandler');
 // global function mock override of `handleAPIError`

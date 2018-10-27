@@ -26,7 +26,7 @@ defmodule AdminAPI.ConnCase do
 
   # Attributes for all calls
   @expected_version "1" # The expected response version
-  @header_accept "application/vnd.tokenplay.v1+json" # The expected response version
+  @header_accept "application/vnd.turboplay.v1+json" # The expected response version
 
   # Attributes for client calls
   @api_key_id UUID.generate()

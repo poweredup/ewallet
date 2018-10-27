@@ -36,14 +36,14 @@ config :ewallet_api, :generators,
 
 # Maps an accept header to the respective router version.
 config :ewallet_api, :api_versions, %{
-  "application/vnd.tokenplay.v1+json" => EWalletAPI.V1.Router
+  "application/vnd.turboplay.v1+json" => EWalletAPI.V1.Router
 }
 
 # Maps accept header to an extension type so Phoenix knows
 # what format to respond with.
 # Run `mix deps.clean --build mime` when updaing this mapping.
 config :mime, :types, %{
-  "application/vnd.tokenplay.v1+json" => ["json"]
+  "application/vnd.turboplay.v1+json" => ["json"]
 }
 
 # Configs for Sentry exception reporting

@@ -13,12 +13,12 @@ defmodule LocalLedger.TransactionTest do
   describe "#build_all" do
     test "builds and formats the transactions" do
       debits = [%{
-        "address" => "tokenplay.test.sender1",
+        "address" => "turboplay.test.sender1",
         "metadata" => %{},
         "amount" => 100
       }]
       credits = [%{
-        "address" => "tokenplay.test.receiver1",
+        "address" => "turboplay.test.receiver1",
         "metadata" => %{},
         "amount" => 100
       }]
@@ -32,12 +32,12 @@ defmodule LocalLedger.TransactionTest do
            type: LocalLedgerDB.Transaction.debit_type,
            amount: 100,
            minted_token_friendly_id: "PLAY:209d3f5b-eab4-4906-9697-c482009fc865",
-           balance_address: "tokenplay.test.sender1",
+           balance_address: "turboplay.test.sender1",
          }, %{
            type: LocalLedgerDB.Transaction.credit_type,
            amount: 100,
            minted_token_friendly_id: "PLAY:209d3f5b-eab4-4906-9697-c482009fc865",
-           balance_address: "tokenplay.test.receiver1",
+           balance_address: "turboplay.test.receiver1",
          }
        ]
     end
@@ -50,17 +50,17 @@ defmodule LocalLedger.TransactionTest do
           type: LocalLedgerDB.Transaction.debit_type,
           amount: 100,
           minted_token_friendly_id: "PLAY:209d3f5b-eab4-4906-9697-c482009fc865",
-          balance_address: "tokenplay.test.sender1",
+          balance_address: "turboplay.test.sender1",
         }, %{
           type: LocalLedgerDB.Transaction.credit_type,
           amount: 100,
           minted_token_friendly_id: "PLAY:209d3f5b-eab4-4906-9697-c482009fc865",
-          balance_address: "tokenplay.test.receiver1",
+          balance_address: "turboplay.test.receiver1",
         }
       ]
 
       addresses = Transaction.get_addresses(transactions)
-      assert addresses == ["tokenplay.test.sender1"]
+      assert addresses == ["turboplay.test.sender1"]
     end
   end
 

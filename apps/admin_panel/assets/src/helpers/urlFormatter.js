@@ -1,5 +1,5 @@
 import queryString from 'query-string';
-import { ADMIN_PANEL_BASE_DIR } from '../tokenplay/config';
+import { ADMIN_PANEL_BASE_DIR } from '../turboplay/config';
 
 export function formatURL(path, query = {}) {
   if (!query || query === {}) { return path; }

@@ -23,7 +23,7 @@ File.cwd!
   """)
 
 # Output the seeding result
-CLI.heading("Setting up the TokenPlay eWallet Server")
+CLI.heading("Setting up the TurboPlay eWallet Server")
 
 CLI.print("""
   This seeder seeds the minimum amount of data needed to start a production environment.
@@ -50,14 +50,14 @@ CLI.print("""
 
     - Change your password immediately! The password will show in the seed only once.
     - Create other Admin Panel users
-    - Manage access and secret keys for your application servers to connect to TokenPlay eWallet API
+    - Manage access and secret keys for your application servers to connect to TurboPlay eWallet API
     - Manage API keys for your mobile apps and the Admin Panel
     - Always come back and access your Admin Panel at #{admin_panel_url}
     - etc.
 
   ## Manage your eWallet system via the Admin API
 
-  The Admin API is the entry point to manage the entire TokenPlay eWallet system.
+  The Admin API is the entry point to manage the entire TurboPlay eWallet system.
   Follow the steps below to authenticate your Swagger UI requests:
 
     1. Browse to `#{admin_api_swagger_ui_url}` and click `Authorize`

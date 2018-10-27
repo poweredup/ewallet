@@ -12,7 +12,7 @@ config :admin_panel,
 
 # Configures the endpoint
 config :admin_panel, AdminPanel.Endpoint,
-  url: [host: "ewallet.tokenplay.com"],
+  url: [host: "ewallet.turboplay.com"],
   render_errors: [view: AdminPanel.ErrorView, accepts: ~w(html json)]
 
 # Configures Elixir's Logger

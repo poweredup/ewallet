@@ -6,7 +6,7 @@ defmodule EWalletAPI.VersionedRouterTest do
   describe "versioned router" do
     test "accepts v1+json requests" do
       response = build_conn()
-      |> put_req_header("accept", "application/vnd.tokenplay.v1+json")
+      |> put_req_header("accept", "application/vnd.turboplay.v1+json")
       |> post(@base_dir <> "/status")
       |> json_response(:ok)
 
@@ -20,13 +20,13 @@ defmodule EWalletAPI.VersionedRouterTest do
         "data" => %{
           "object" => "error",
           "code" => "client:invalid_version",
-          "description" => "Invalid API version. Given: \"application/vnd.tokenplay.invalid_ver+json\".",
+          "description" => "Invalid API version. Given: \"application/vnd.turboplay.invalid_ver+json\".",
           "messages" => nil
         }
       }
 
       response = build_conn()
-      |> put_req_header("accept", "application/vnd.tokenplay.invalid_ver+json")
+      |> put_req_header("accept", "application/vnd.turboplay.invalid_ver+json")
       |> post(@base_dir <> "/status")
       |> json_response(:ok)
 

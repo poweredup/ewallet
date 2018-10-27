@@ -1,4 +1,4 @@
-import { getAll, get } from '../../../../tokenplay/services/account_api';
+import { getAll, get } from '../../../../turboplay/services/account_api';
 import SessionActions from '../../../../actions/session.actions';
 import call from '../../../../actions/api.actions';
 

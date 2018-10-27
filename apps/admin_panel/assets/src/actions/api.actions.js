@@ -25,7 +25,7 @@ const call = requestOptions => (dispatch) => {
 
   dispatch(LoadingActions.showLoading());
 
-  /* execute the tokenplay's service */
+  /* execute the turboplay's service */
   return service(params)
     .then((result) => {
       /* Hide loading */

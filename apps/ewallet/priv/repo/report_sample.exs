@@ -14,12 +14,12 @@ admin_api_key         = Application.get_env(:ewallet, :seed_admin_api_key)
 admin_user            = Application.get_env(:ewallet, :seed_admin_user)
 admin_auth_token      = Application.get_env(:ewallet, :seed_admin_auth_token)
 
-CLI.heading("Trying out TokenPlay eWallet Server with sample data")
+CLI.heading("Trying out TurboPlay eWallet Server with sample data")
 
 CLI.print("""
   This seeder seeds numerous sample data so that after the seed,
   you can use our Swagger UI to freely play around with the complete
-  set of TokenPlay eWallet applications:
+  set of TurboPlay eWallet applications:
 
   - `eWallet API`'s Server endpoints
   - `eWallet API`'s Client endpoints

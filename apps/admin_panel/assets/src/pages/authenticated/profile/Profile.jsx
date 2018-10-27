@@ -9,7 +9,7 @@ import PLAYFieldGroup from '../../../components/PLAYFieldGroup';
 import PLAYLoadingButton from '../../../components/PLAYLoadingButton';
 import PLAYPhotoPreviewer from '../../../components/PLAYPhotoPreviewer';
 import placeholder from '../../../../public/images/user_icon_placeholder.png';
-import { ADMIN_API_BASE_URL } from '../../../tokenplay/config';
+import { ADMIN_API_BASE_URL } from '../../../turboplay/config';
 import { moveToTop } from '../../../helpers/scrollHelper';
 
 class Profile extends Component {

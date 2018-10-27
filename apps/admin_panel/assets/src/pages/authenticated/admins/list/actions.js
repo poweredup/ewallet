@@ -1,4 +1,4 @@
-import { getAll } from '../../../../tokenplay/services/admin_api';
+import { getAll } from '../../../../turboplay/services/admin_api';
 import SERIALIZER from '../../../../helpers/serializer';
 import call from '../../../../actions/api.actions';
 

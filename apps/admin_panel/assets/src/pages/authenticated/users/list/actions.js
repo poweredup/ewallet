@@ -1,4 +1,4 @@
-import { getAll } from '../../../../tokenplay/services/user_api';
+import { getAll } from '../../../../turboplay/services/user_api';
 import call from '../../../../actions/api.actions';
 
 const loadUsers = (params, onSuccess) => call({

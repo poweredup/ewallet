@@ -3,7 +3,7 @@ info:
   version: "1.0.0"
   title: TOKEN PLAY BACKEND API
   description: >
-    This is the documentation for Token Play Backend API. [Token Play Backend Architecture Figure](http://app.blocplays.com/tokenplay_arch.png).
+    This is the documentation for Token Play Backend API.
     
     # Application
     
@@ -202,7 +202,7 @@ info:
     
   contact:
     name: Vince McMullin, CTO
-    email: vincem@tokenplay.com
+    email: vincem@turboplay.com
 
 tags:
   - name: Session
@@ -1207,7 +1207,7 @@ components:
         object: "user"
         id: "cec34607-0761-4a59-8357-18963e42a1aa"
         provider_user_id: "wijf-fbancomw-dqwjudb"
-        username: "vincem@tokenplay.com"
+        username: "vincem@turboplay.com"
         metadata: {"first_name": "Vince", "last_name": "McMullin"}
         encrypted_metadata: {}
     UserResponseSchema:
@@ -1226,7 +1226,7 @@ components:
             object: "user"
             id: "cec34607-0761-4a59-8357-18963e42a1aa"
             provider_user_id: "wijf-fbancomw-dqwjudb"
-            username: "vincem@tokenplay.com"
+            username: "vincem@turboplay.com"
             metadata: {"first_name": "Vince", "last_name": "McMullin"}
             encrypted_metadata: {}
 
@@ -1415,7 +1415,7 @@ components:
                   object: 'minted_token'
                   id: "PLAY:61822683-68d8-4af6-94d7-5ed4c34ecf1a"
                   symbol: "PLAY"
-                  name: "tokenplay"
+                  name: "turboplay"
                   subunit_to_unit: 100000000000000000
             - object: "address"
               address: "XXX456"
@@ -1668,7 +1668,7 @@ components:
               - object: "minted_token"
                 id: "PLAY:5e9c0be5-15d1-4463-9ec2-02bc8ded7120"
                 symbol: "PLAY"
-                name: "tokenplay"
+                name: "turboplay"
                 subunit_to_unit: 100000000000000000
 
     ######################################
@@ -2306,7 +2306,7 @@ components:
       description: The parameters to use for creating or updating a user
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               provider_user_id:
@@ -2322,14 +2322,14 @@ components:
               - username
             example:
               provider_user_id: "wijf-fbancomw-dqwjudb"
-              username: "vincem@tokenplay.com"
+              username: "vincem@turboplay.com"
               metadata: {"first_name": "Vince", "last_name": "McMullin"}
               encrypted_metadata: {}
     ProviderIdBody:
       description: The parameters to use for providing a provider user id
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               provider_user_id:
@@ -2346,7 +2346,7 @@ components:
       description: The parameters to use to customize the returned list of transactions.
       required: false
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               page:
@@ -2375,7 +2375,7 @@ components:
       description: The parameters to use to customize the returned list of transactions.
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               provider_user_id:
@@ -2412,7 +2412,7 @@ components:
       description: The parameters to use to customize the returned list of transactions.
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               address:
@@ -2449,7 +2449,7 @@ components:
       description: The parameters for making a transfer from an address to another.
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               from_address:
@@ -2486,7 +2486,7 @@ components:
         and will instead be returned to the primary balance of the selected account.
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               provider_user_id:
@@ -2519,7 +2519,7 @@ components:
       description: Create a transaction request using the specified values. That request can then be consumed using a different endpoint by a different client to create a transaction from that request.
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               type:
@@ -2548,7 +2548,7 @@ components:
       description: Get a transaction request using the specified ID.
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               id:
@@ -2559,7 +2559,7 @@ components:
       description: Consume a transaction request using the specified values.
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               transaction_request_id:
@@ -2627,7 +2627,7 @@ components:
     AuthenticationTokenResponse:
       description: "Returns a single authentication token"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/AuthenticationTokenResponse'
 
@@ -2637,7 +2637,7 @@ components:
     UserResponse:
       description: "Returns a single user"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/UserResponseSchema'
 
@@ -2647,13 +2647,13 @@ components:
     TransactionResponse:
       description: "Returns a single transaction"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/TransactionResponseSchema'
     TransactionsResponse:
       description: "Returns a list of transactions"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/TransactionsResponseSchema'
 
@@ -2663,19 +2663,19 @@ components:
     SingleAddressesResponse:
       description: "Returns a list of single addresses"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/SingleAddressesResponse'
     MultipleAddressesResponse:
       description: "Returns a list of multiple addresses"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/MultipleAddressesResponse'
     AddressesResponse:
       description: "Returns a list of addresses"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/AddressesResponse'
 
@@ -2686,14 +2686,14 @@ components:
     TransactionRequestResponse:
       description: Transaction request response
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/TransactionRequestResponse'
     # Schema for transaction request response body
     TransactionRequestConsumptionResponse:
       description: Transaction request consumption response
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/TransactionRequestConsumptionResponse'
 
@@ -2703,7 +2703,7 @@ components:
     SettingResponse:
       description: "Returns a list of settings"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/SettingResponse'
             
@@ -2713,7 +2713,7 @@ components:
     FriendResponse:
       description: "Get a specific friend request"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/FriendResponse'
 
@@ -2723,13 +2723,13 @@ components:
     EmptyResponse:
       description: "Returns an empty response"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/BaseResponseSchema'
     InternalServerError:
       description: "Returns an internal server error"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/ErrorResponseSchema'
             

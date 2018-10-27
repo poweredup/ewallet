@@ -1,23 +1,19 @@
-# TokenPlay eWallet
+# TurboPlay eWallet
 
-The TokenPlay eWallet is provided as part of our OpenSource initiative at BlocPlay Entertainment. It is based on the amazing work done by the OmiseGO team through the Apache2 license. A big shout out to the amazing work OmiseGO's dev team has been doing.
-
-Does this mean TokenPlay will be supporting OMG Tokens? Yes. The intention of TokenPlay is to fully support OMG tokens and ensure our technology works closely with the dev work the OmiseGO team is currently doing with Ethereum and Vitalik Buterin.
-
-If you would like more information on this system please contact [Vince McMullin](https://github.com/vamman), CTO.
+The TurboPlay eWallet is provided as part of our OpenSource initiative at TurboPlay Corporation. It is based on the amazing work done by the OmiseGO team through the Apache2 license. A big shout out to the amazing work OmiseGO's dev team has been doing.
 
 # Disclaimer
 
 ## Alpha
 
-TokenPlay and all of its systems are under heavy active development and we strongly advise against using these systems in production at this time.
+TurboPlay and all of its systems are under heavy active development and we strongly advise against using these systems in production at this time.
 
 __Use at your own risk.__
 
 # Online Demo
-[eWallet Demo](http://ewallet.tokenplay.com/)
+[eWallet Demo](http://ewallet.turboplay.com/)
 
-Play around with the complete set of backend APIs in development for TokenPlay!
+Play around with the complete set of backend APIs in development for TurboPlay!
 
   • eWallet API's Server endpoints
   • eWallet API's Client endpoints
@@ -34,7 +30,7 @@ There is ClientAuth and ServerAuth. Anything that modifies the database uses Ser
 
 ## Try eWallet API's Server endpoints
 
-- Browse to http://ewallet.tokenplay.com/api/docs
+- Browse to http://ewallet.turboplay.com/api/docs
 - Click the Authorize button
 - Use the value below for ServerAuth:
 ```
@@ -44,7 +40,7 @@ There is ClientAuth and ServerAuth. Anything that modifies the database uses Ser
 
 ## Try eWallet API's Client endpoints
 
-- Browse to http://ewallet.tokenplay.com/api/docs
+- Browse to http://ewallet.turboplay.com/api/docs
 - Click the Authorize button
 - Use the value below for ClientAuth:
 ```
@@ -54,7 +50,7 @@ There is ClientAuth and ServerAuth. Anything that modifies the database uses Ser
 
 ## Try Admin API's Client endpoints
 
-- Browse to http://ewallet.tokenplay.com/admin/api/docs.ui
+- Browse to http://ewallet.turboplay.com/admin/api/docs.ui
 - Click the Authorize button
 - Use the value below for ClientAuth:
 ```
@@ -64,7 +60,7 @@ There is ClientAuth and ServerAuth. Anything that modifies the database uses Ser
 
 ## Try Admin API's User endpoints
 
-- Browse to http://ewallet.tokenplay.com/admin/api/docs.ui
+- Browse to http://ewallet.turboplay.com/admin/api/docs.ui
 - Click the Authorize button
 - Use the value below for UserAuth:
 ```
@@ -73,10 +69,9 @@ There is ClientAuth and ServerAuth. Anything that modifies the database uses Ser
 - Try out User endpoints such as /account.create, /account.assign_user, /access_key.create, etc.
 
 
-# TokenPlay Architecture
-![TokenPlay Architecture](http://app.blocplays.com/tokenplay_arch.png)
+# TurboPlay Architecture
 
-The TokenPlay architecture consists of the following backends:
+The TurboPlay architecture consists of the following backends:
 - eWallet Backend
 - Gamer Backend
 - Developer Backend
@@ -91,9 +86,9 @@ Release: This is the latest public release of our codebase.
 
 Staging: This is the most up to date build of our codebase.
 
-(http://ewallet.tokenplay.com/) [Release]
+(http://ewallet.turboplay.com/) [Release]
 
-(http://mac.tokenplay.com/) [Staging]
+(http://mac.turboplay.com/) [Staging]
 
 Sample Frontend: Coming soon developed in ElectronJS!
 
@@ -203,7 +198,7 @@ cd Source
 ```
 
 ```
-git clone https://github.com/blocplay/ewallet.git ewallet
+git clone https://github.com/turbo-play/ewallet.git ewallet
 cd ewallet
 ```
 
@@ -221,7 +216,7 @@ cd apps/admin_panel/assets/ && yarn install
 
 ```
 nano ~/Source/ewallet/apps/ewallet_db/config/dev.exs
-base_url: "http://xxx.tokenplay.com"
+base_url: "http://xxx.turboplay.com"
 ```
 
 You can change the db credentials as well if you like.
@@ -280,7 +275,7 @@ sudo nano /etc/apache2/extra/httpd-vhosts.conf
 
 ```
 <VirtualHost *:80>
-        ServerName xxx.tokenplay.com
+        ServerName xxx.turboplay.com
 
         #ServerAdmin webmaster@localhost
         #DocumentRoot /var/www/html

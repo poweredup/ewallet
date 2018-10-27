@@ -6,42 +6,42 @@ alias EWalletDB.{Account, MintedToken, Repo}
 seeds = [
   %{
     symbol: "PLAY",
-    name: "TokenPlay",
+    name: "TurboPlay",
     subunit_to_unit:        10_000,
     genesis_amount: 10_000_000_000_000, # 1,000,000,000 PLAY
     account_id: Account.get_master_account().id
   },
   %{
     symbol: "PLAYGDC",
-    name: "TokenPlayGDC",
+    name: "TurboPlayGDC",
     subunit_to_unit:        10_000,
     genesis_amount: 30_000_000, # 3,000 PLAYGDC
     account_id: Account.get_master_account().id
   },
   %{
     symbol: "PLAYESL",
-    name: "TokenPlayESL",
+    name: "TurboPlayESL",
     subunit_to_unit:        10_000,
     genesis_amount: 500_000_000, # 50,000 PLAYESL
     account_id: Account.get_master_account().id
   },
   %{
     symbol: "PLAYE3",
-    name: "TokenPlayE3",
+    name: "TurboPlayE3",
     subunit_to_unit:        10_000,
     genesis_amount: 1_500_000_000, # 150,000 PLAYE3
     account_id: Account.get_master_account().id
   },
   %{
     symbol: "PLAYGC",
-    name: "TokenPlayGC",
+    name: "TurboPlayGC",
     subunit_to_unit:        10_000,
     genesis_amount: 1_500_000_000, # 150,000 PLAYGC
     account_id: Account.get_master_account().id
   },
   %{
     symbol: "PLAYHGA",
-    name: "TokenPlayHGA",
+    name: "TurboPlayHGA",
     subunit_to_unit:        10_000,
     genesis_amount: 500_000_000, # 50,000 PLAYHGA
     account_id: Account.get_master_account().id

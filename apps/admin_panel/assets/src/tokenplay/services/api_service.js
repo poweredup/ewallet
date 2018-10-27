@@ -1,4 +1,4 @@
-import TokenPlayError from '../models/error';
+import TurboPlayError from '../models/error';
 import mergeHash from '../helpers/helper';
 import { ADMIN_API_BASE_URL } from '../config';
 import buildURL from '../helpers/urlHelper';
@@ -9,7 +9,7 @@ function requestOptions(body, authenticated) {
     method: 'POST',
     headers: mergeHash(
       {
-        Accept: 'application/vnd.tokenplay.v1+json',
+        Accept: 'application/vnd.turboplay.v1+json',
         'Content-Type': 'application/json',
       },
       headers(authenticated),
@@ -23,7 +23,7 @@ function requestOptionsMultipart(body, authenticated) {
     method: 'POST',
     headers: mergeHash(
       {
-        Accept: 'application/vnd.tokenplay.v1+json',
+        Accept: 'application/vnd.turboplay.v1+json',
       },
       headers(authenticated),
     ),
@@ -36,7 +36,7 @@ function handleResponse(response) {
   if ([200, 500].includes(response.status)) {
     return response.json();
   }
-  const error = new TokenPlayError({
+  const error = new TurboPlayError({
     code: 'invalid_status_code',
     description: 'Invalid http status code',
   });
@@ -47,13 +47,13 @@ function parseJson(json) {
   if (json.success) {
     return json.data;
   }
-  const error = new TokenPlayError(json.data);
+  const error = new TurboPlayError(json.data);
   return Promise.reject(error);
 }
 
 function handleError(error) {
   if (error.code == null || error.description == null) {
-    throw new TokenPlayError({
+    throw new TurboPlayError({
       code: 'unknown',
       description: `Could not connect to Admin API (${ADMIN_API_BASE_URL})`,
     });

@@ -1,5 +1,5 @@
-import { uploadAvatar } from '../../../tokenplay/services/admin_api';
-import { getUser } from '../../../tokenplay/services/user_api';
+import { uploadAvatar } from '../../../turboplay/services/admin_api';
+import { getUser } from '../../../turboplay/services/user_api';
 import SessionActions from '../../../actions/session.actions';
 import call from '../../../actions/api.actions';
 

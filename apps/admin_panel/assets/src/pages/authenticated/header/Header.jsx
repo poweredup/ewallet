@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { getTranslate } from 'react-localize-redux';
 import { Image, Navbar } from 'react-bootstrap';
-import logo from '../../../../public/images/tokenplay_logo_white.png';
+import logo from '../../../../public/images/TurboPlay.png';
 import UserInfoNavItem from './UserInfoNavItem';
 
 const Header = ({

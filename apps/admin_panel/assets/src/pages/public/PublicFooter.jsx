@@ -10,7 +10,7 @@ const PublicFooter = ({ translate }) => (
         <Button
           bsStyle="link"
           className="list-inline-item public-footer__link"
-          href="https://tokenplay.com/"
+          href="https://turboplay.com/"
         >
           {translate('public-footer.about')}
         </Button>
@@ -19,7 +19,7 @@ const PublicFooter = ({ translate }) => (
         <Button
           bsStyle="link"
           className="list-inline-item public-footer__link"
-          href="https://tokenplay.com/"
+          href="https://turboplay.com/"
         >
           {translate('public-footer.documentation')}
         </Button>
@@ -28,7 +28,7 @@ const PublicFooter = ({ translate }) => (
         <Button
           bsStyle="link"
           className="list-inline-item public-footer__link"
-          href="https://tokenplay.com/"
+          href="https://turboplay.com/"
         >
           {translate('public-footer.help')}
         </Button>
@@ -37,7 +37,7 @@ const PublicFooter = ({ translate }) => (
         <Button
           bsStyle="link"
           className="list-inline-item public-footer__link"
-          href="https://tokenplay.com/"
+          href="https://turboplay.com/"
         >
           {translate('public-footer.terms')}
         </Button>
@@ -46,15 +46,13 @@ const PublicFooter = ({ translate }) => (
         <Button
           bsStyle="link"
           className="list-inline-item public-footer__link"
-          href="https://tokenplay.com/"
+          href="https://turboplay.com/"
         >
           {translate('public-footer.privacy')}
         </Button>
       </li>
     </ul>
-	<center>&copy; 2018 <a href="https://tokenplay.com/">Token Play</a>.</center>
-	<br></br>
-	<center>A <a href="https://www.blocplays.com/">BlocPlay Entertainment</a> Company.</center>
+	<center>&copy; 2018 <a href="https://turboplay.com/">TurboPlay Corporation</a>.</center>
   </div>
 );
 

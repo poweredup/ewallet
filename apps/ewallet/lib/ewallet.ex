@@ -1,7 +1,7 @@
-# Copyright 2018-2019 TokenPlay
+# Copyright 2018-2019 TurboPlay
 # Author: Vince McMullin, CTO
-# Website: tokenplay.com
-# Email: vincem@tokenplay.com
+# Website: turboplay.com
+# Email: vincem@turboplay.com
 #
 # Copyright 2017-2018 OmiseGO
 #

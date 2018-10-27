@@ -1,4 +1,4 @@
-import { resetPassword } from '../../../tokenplay/services/session_api';
+import { resetPassword } from '../../../turboplay/services/session_api';
 import call from '../../../actions/api.actions';
 import SERIALIZER from '../../../helpers/serializer';
 

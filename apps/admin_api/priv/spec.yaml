@@ -26,7 +26,7 @@ info:
     will be returned.
   contact:
     name: Vince McMullin, CTO
-    email: vincem@tokenplay.com
+    email: vincem@turboplay.com
 
 tags:
   - name: Session
@@ -1467,7 +1467,7 @@ components:
       description: The parameters to use for logging in a user
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               email:
@@ -1486,7 +1486,7 @@ components:
       description: The parameters to use for requesting a reset password
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               email:
@@ -1504,7 +1504,7 @@ components:
       description: The parameters to use for reseting a password
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               email:
@@ -1536,7 +1536,7 @@ components:
       description: The parameters to use for listing the minted tokens
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               page:
@@ -1562,7 +1562,7 @@ components:
       description: The parameters to use for retrieving a specific minted token by its id
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               id:
@@ -1576,7 +1576,7 @@ components:
         description: The parameters to create a minted token. Note that if amount is specified, the token will be minted automatically.
         required: true
         content:
-          application/vnd.tokenplay.v1+json:
+          application/vnd.turboplay.v1+json:
             schema:
               properties:
                 name:
@@ -1622,7 +1622,7 @@ components:
       description: The parameters to use for listing the accounts
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               page:
@@ -1648,7 +1648,7 @@ components:
       description: The parameters to use for retrieving a specific account by its id
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               id:
@@ -1662,7 +1662,7 @@ components:
       description: The parameters to use for creating a new account
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               name:
@@ -1687,7 +1687,7 @@ components:
       description: The parameters to use for updating an account
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               id:
@@ -1719,7 +1719,7 @@ components:
       description: The parameters to use for assigning listing users in an account
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               account_id:
@@ -1733,7 +1733,7 @@ components:
       description: The parameters to use for assigning a user to an account
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             oneOf:
               - properties:
@@ -1784,7 +1784,7 @@ components:
       description: The parameters to use for unassigning a user from an account
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               user_id:
@@ -1826,7 +1826,7 @@ components:
       description: The parameters to use for listing the users
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               page:
@@ -1852,7 +1852,7 @@ components:
       description: The parameters to use for retrieving a specific user by its id
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               id:
@@ -1866,7 +1866,7 @@ components:
       description: The parameters to use for accepting an invite
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               email:
@@ -1895,7 +1895,7 @@ components:
       description: The parameters to use for listing the transactions
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               page:
@@ -1921,7 +1921,7 @@ components:
       description: The parameters to use for retrieving a specific transaction by its id
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               id:
@@ -1939,7 +1939,7 @@ components:
       description: The parameters to use for listing the admins
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               page:
@@ -1965,7 +1965,7 @@ components:
       description: The parameters to use for retrieving a specific admin by its id
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               id:
@@ -2002,7 +2002,7 @@ components:
       description: The parameters to use for listing the access keys
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               page:
@@ -2028,7 +2028,7 @@ components:
       description: The parameters to use for deleting an access key
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             oneOf:
               - properties:
@@ -2056,7 +2056,7 @@ components:
       description: The parameters to use for listing the API keys
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               page:
@@ -2082,7 +2082,7 @@ components:
       description: The parameters to use for creating an API key
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               owner_app:
@@ -2095,7 +2095,7 @@ components:
       description: The parameters to use for deleting an API key
       required: true
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             properties:
               id:
@@ -2128,7 +2128,7 @@ components:
     AuthenticationTokenResponse:
       description: "Authentication token response"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/AuthenticationTokenResponseSchema'
 
@@ -2138,13 +2138,13 @@ components:
     MintedTokenResponse:
       description: "Returns a single minted tokens"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/MintedTokenResponseSchema'
     MintedTokensResponse:
       description: "Returns a list of minted tokens"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/MintedTokensResponseSchema'
 
@@ -2154,13 +2154,13 @@ components:
     AccountResponse:
       description: "Returns a single account"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/AccountResponseSchema'
     AccountsResponse:
       description: "Returns a list of accounts"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/AccountsResponseSchema'
 
@@ -2170,13 +2170,13 @@ components:
     UserResponse:
       description: "Returns a single user"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/UserResponseSchema'
     UsersResponse:
       description: "Returns a list of users"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/UsersResponseSchema'
 
@@ -2186,13 +2186,13 @@ components:
     TransactionResponse:
       description: "Returns a single transaction"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/TransactionResponseSchema'
     TransactionsResponse:
       description: "Returns a list of transactions"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/TransactionsResponseSchema'
 
@@ -2202,13 +2202,13 @@ components:
     AdminResponse:
       description: "Returns a single admin panel user"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/AdminResponseSchema'
     AdminsResponse:
       description: "Returns a list of admin panel users"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/AdminsResponseSchema'
 
@@ -2218,13 +2218,13 @@ components:
     AccessKeyResponse:
       description: "Returns a single access key"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/AccessKeyResponseSchema'
     AccessKeysResponse:
       description: "Returns a list of access keys"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/AccessKeysResponseSchema'
 
@@ -2234,13 +2234,13 @@ components:
     APIKeyResponse:
       description: "Returns a single API key"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/APIKeyResponseSchema'
     APIKeysResponse:
       description: "Returns a list of API keys"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/APIKeysResponseSchema'
 
@@ -2250,12 +2250,12 @@ components:
     EmptyResponse:
       description: "Returns an empty response"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/BaseResponseSchema'
     InternalServerError:
       description: "Returns an internal server error"
       content:
-        application/vnd.tokenplay.v1+json:
+        application/vnd.turboplay.v1+json:
           schema:
             $ref: '#/components/schemas/ErrorResponseSchema'

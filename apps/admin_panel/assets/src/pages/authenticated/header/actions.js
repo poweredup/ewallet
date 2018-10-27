@@ -1,5 +1,5 @@
 import { push } from 'react-router-redux';
-import { logout } from '../../../tokenplay/services/session_api';
+import { logout } from '../../../turboplay/services/session_api';
 import SessionActions from '../../../actions/session.actions';
 import call from '../../../actions/api.actions';
 

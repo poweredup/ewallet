@@ -1,7 +1,7 @@
 import ErrorHandler from '../../../helpers/errorHandler';
-import { assignMember, inviteMember, unassignMember, listMembers, updateMember, updateAccountInfo, uploadAvatar } from '../../../tokenplay/services/setting_api';
+import { assignMember, inviteMember, unassignMember, listMembers, updateMember, updateAccountInfo, uploadAvatar } from '../../../turboplay/services/setting_api';
 import LoadingActions from '../../../actions/loading.actions';
-import { getAll } from '../../../tokenplay/services/admin_api';
+import { getAll } from '../../../turboplay/services/admin_api';
 import SessionActions from '../../../actions/session.actions';
 import SERIALIZER from '../../../helpers/serializer';
 import call from '../../../actions/api.actions';

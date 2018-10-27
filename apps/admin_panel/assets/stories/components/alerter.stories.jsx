@@ -24,7 +24,7 @@ storiesOf('Alerter', module)
   )(() => {
     const alert = {
       type: 'alert-danger',
-      message: 'TokenPlay Error',
+      message: 'TurboPlay Error',
     };
     return (
       <div>
@@ -42,7 +42,7 @@ storiesOf('Alerter', module)
   )(() => {
     const alert = {
       type: 'alert-success',
-      message: 'TokenPlay Success',
+      message: 'TurboPlay Success',
     };
     return (
       <div>

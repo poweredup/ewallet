@@ -1,5 +1,5 @@
-import { updatePassword } from '../../../tokenplay/services/session_api';
-import { createAdmin } from '../../../tokenplay/services/admin_api';
+import { updatePassword } from '../../../turboplay/services/session_api';
+import { createAdmin } from '../../../turboplay/services/admin_api';
 import { processURL } from '../../../helpers/urlFormatter';
 import call from '../../../actions/api.actions';
 import SERIALIZER from '../../../helpers/serializer';

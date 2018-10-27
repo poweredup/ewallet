@@ -29,17 +29,17 @@ const members = [
   {
     imageUrl: 'https://6f553f294d9c2b381dc8-21a51a0c688da9b8f39d1cd2f922214e.ssl.cf3.rackcdn.com/photos/131-3-4.jpg',
     email: 'thibault@omise.co',
-    accountRole: 'TokenPlay Software Developer Team Lead',
+    accountRole: 'TurboPlay Software Developer Team Lead',
   },
   {
     imageUrl: 'https://6f553f294d9c2b381dc8-21a51a0c688da9b8f39d1cd2f922214e.ssl.cf3.rackcdn.com/photos/146-0-4.jpg',
     email: 'phuchit@omise.co',
-    accountRole: 'TokenPlay Mobile App Developer',
+    accountRole: 'TurboPlay Mobile App Developer',
   },
   {
     imageUrl: 'https://6f553f294d9c2b381dc8-21a51a0c688da9b8f39d1cd2f922214e.ssl.cf3.rackcdn.com/photos/139-0-4.jpg',
     email: 'mederic@omise.co',
-    accountRole: 'TokenPlay Mobile App Developer',
+    accountRole: 'TurboPlay Mobile App Developer',
   },
 ];
 

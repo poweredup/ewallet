@@ -9,7 +9,7 @@ config :ewallet_db, EWalletDB.Repo,
   port: "5432"
 
 config :ewallet_db,
-  base_url: "http://ewallet.tokenplay.com"
+  base_url: "http://ewallet.turboplay.com"
 
 key = "j6fy7rZP9ASvf1bmywWGRjrmh8gKANrg40yWZ-rSKpI"
 

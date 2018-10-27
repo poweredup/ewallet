@@ -7,7 +7,7 @@ import { Image, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import defaultAvatar from '../../../../public/images/user_icon_placeholder.png';
 import Actions from './actions';
 
-const defaultEmail = 'default@tokenplay.co';
+const defaultEmail = 'default@turboplay.co';
 
 const UserInfoNavItem = ({
   accountPath, currentUser, history, translate, logout,

@@ -19,7 +19,7 @@ storiesOf('PLAYTableContentRow', module)
   .add('object with 1 number and 2 strings', () => {
     const data = {
       id: 1,
-      name: 'TokenPlay',
+      name: 'TurboPlay',
       description: 'Test',
     };
 
@@ -47,7 +47,7 @@ storiesOf('PLAYTableContentRow', module)
   .add('object with 2 numbers, 1 boolean, and 2 strings', () => {
     const data = {
       id: 1,
-      name: 'TokenPlay',
+      name: 'TurboPlay',
       description: 'Test',
       master: true,
       value: 8.99,

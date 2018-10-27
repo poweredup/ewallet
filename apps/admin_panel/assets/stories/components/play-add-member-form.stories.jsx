@@ -74,7 +74,7 @@ storiesOf('PLAYAddMemberForm', module)
   .addDecorator(smallContainer)
   .addDecorator(reduxDecorator)
   .add('Normal state', () => <PLAYAddMemberForm labelKey="" />)
-  .add('With default value', () => <PLAYAddMemberForm defaultInputValue="TokenPlay" labelKey="" />)
+  .add('With default value', () => <PLAYAddMemberForm defaultInputValue="TurboPlay" labelKey="" />)
   .add('With github users searching', () => (
     <PLAYAddMemberForm
       customRenderMenuItem={customMenuItem}

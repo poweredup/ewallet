@@ -1,4 +1,4 @@
-import { getAll, deleteKey } from '../../../../tokenplay/services/api_management_api';
+import { getAll, deleteKey } from '../../../../turboplay/services/api_management_api';
 import call from '../../../../actions/api.actions';
 
 export const loadApiKeys = (params, onSuccess) => call({

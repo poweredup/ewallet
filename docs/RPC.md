@@ -1,10 +1,10 @@
-# TokenPlay RPC Proposal
+# TurboPlay RPC Proposal
 
-This proposal is in regards to the Backend Endpoints required by the TokenPlay frontend written in Electron JS & React. We believe that we should be as fault tolerant and protocol agnostic as possible and are proposing an RPC system for the entire API.
+This proposal is in regards to the Backend Endpoints required by the TurboPlay frontend written in Electron JS & React. We believe that we should be as fault tolerant and protocol agnostic as possible and are proposing an RPC system for the entire API.
 
 The proposed web API method only allows for the POST method returning 200 or 500 codes with customized representations and errors.
 
-When building a distributed system like our API for TokenPlay, we need to choose a communication protocol and decide how the data will be serialized. While there are many options out there, unfortunately a lot of developers choose HTTP + JSON, which is a very verbose and expensive combination for performing what ends up becoming RPC calls.
+When building a distributed system like our API for TurboPlay, we need to choose a communication protocol and decide how the data will be serialized. While there are many options out there, unfortunately a lot of developers choose HTTP + JSON, which is a very verbose and expensive combination for performing what ends up becoming RPC calls.
 
 With Elixir, we already have a communication protocol and a serialization mechanism out of the box via Distributed Erlang therefore we are dropping Rest entirely from the backend API and recommend that all microservices do so. So our API is uniform and shows foresight as to how it was built. If you want to have two nodes communicating with each other, you only need to give them names, ensure they share the same secret cookie, and we are done.
 

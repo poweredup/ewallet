@@ -1,4 +1,4 @@
-import { create } from '../../../../tokenplay/services/token_api';
+import { create } from '../../../../turboplay/services/token_api';
 import call from '../../../../actions/api.actions';
 
 class Actions {

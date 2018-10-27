@@ -1,4 +1,4 @@
-import { getAll } from '../../../../tokenplay/services/transaction_api';
+import { getAll } from '../../../../turboplay/services/transaction_api';
 import call from '../../../../actions/api.actions';
 
 const loadTransactions = (params, onSuccess) => call({

@@ -6,7 +6,7 @@
 
 - __Accounts__: A grouping of users and balances. It can be used by a provider admin to define logical groupings according to its business needs, e.g. an account for each product branding, each store branch, each sales team or each operating region, etc.
 
-- __Users__: A user can either be a regular user or a staff user (a.k.a admin) In the first case, it would be someone using the end-user applications created by providers (mobile applications for example), who was added to the eWallet database by the provider. In the second case, it's a user able to access the TokenPlay admin panel.
+- __Users__: A user can either be a regular user or a staff user (a.k.a admin) In the first case, it would be someone using the end-user applications created by providers (mobile applications for example), who was added to the eWallet database by the provider. In the second case, it's a user able to access the TurboPlay admin panel.
 
 - __Balances__: A balance identified by an address which is used to group transactions and holds a value. A user can have more than one balance if needed, and a balance can contain different currencies. You can learn more about balances [there](/docs/balances.md).
 
